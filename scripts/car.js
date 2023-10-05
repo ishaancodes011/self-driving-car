@@ -11,7 +11,6 @@ class Car{
         this.friction = 0.05;
         this.angle = 0;
         this.angleSpeed = 0.03;
-        this.angleFriction = 0.00015;
 
         this.controls = new Controls();
     }
@@ -48,7 +47,7 @@ class Car{
             this.speed = 0;
         }
         if (this.speed != 0){
-            const flip = this.speed/3
+            const flip = this.speed>0?1:-1;
             if (this.controls.left) {
                 this.angle += this.angleSpeed*flip;
             }
