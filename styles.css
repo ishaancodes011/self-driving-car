@@ -5,6 +5,14 @@ body{
     text-align: center;
 }
 
-#myCanvas {
+#controls{
+    position: absolute;
+    background-color: darkgrey;
+}
+
+#carCanvas {
     background: lightgrey;
+}
+#networkCanvas {
+    background: black;
 }
