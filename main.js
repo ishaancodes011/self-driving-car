@@ -11,7 +11,7 @@ const road = new Road(carCanvas.width/2, carCanvas.width*0.9);
 const N = 1;
 const cars = generateCars(N);
 let bestCar = cars[0];
-const bB = "";
+let bB = "";
 fetch("bestBrain.json").then(res => res.json()).then((data)=>{bB = data})
 if(bB){
     for (let i=0; i<cars.length; i++){
